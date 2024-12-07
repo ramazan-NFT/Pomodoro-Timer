@@ -1,0 +1,365 @@
+html,
+body {
+  height: 100%; /* Убедитесь, что body занимает всю высоту экрана */
+  margin: 0; /* Удалите отступы по умолчанию */
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #62554a;
+  color: white;
+  display: flex;
+  align-items: center; /* Центрирование по горизонтали */
+  flex-direction: column;
+  /* Центрирование по вертикали */
+}
+.header {
+  display: flex;
+  height: 117px;
+  width: 1440px;
+  font-size: 45px;
+  justify-content: center;
+  margin-left: 120px;
+}
+.question-icons {
+}
+.question-icons img {
+  width: 70px;
+  height: 70px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-icons-container {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: block;
+  height: 50px;
+  left: 600px;
+  top: 40px;
+}
+
+.tooltip {
+  font-size: 15px;
+  position: absolute;
+  left: calc(-100% - 50px);
+  transform: translateX(-50%);
+  background-color: #b6a89a;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1000;
+  width: 400px;
+  padding: 10px;
+}
+.tooltip span {
+  display: block; /* Обеспечивает перенос текста на новую строку */
+}
+.nav {
+  padding-left: 80px;
+  flex-direction: column; /* Устанавливает вертикальное расположение дочерних элементов */
+  display: flex;
+  width: 476px;
+  height: 566px;
+}
+.img {
+  margin-left: 90px;
+  margin-right: 138px;
+  margin-bottom: 48px;
+    display: flex;
+  align-items: center;
+  width: 275px;
+  height: 275px;
+}
+.catssss img {
+  width: 275px;
+  height: 275px;
+}
+.timer {
+  border: solid;
+  border-color: rgba(255, 255, 255, 0.267);
+  width: 378px;
+  display: flex;
+  height: 67px;
+  background-color: #b4a99d;
+  border-radius: 23px;
+  align-items: center;
+  justify-content: space-between; /* Размещает элементы по краям */
+}
+
+.timer p {
+  margin: 0; /* Убираем внешние отступы, чтобы не мешали */
+  font-size: 40px;
+  justify-content: center;
+  margin-left: 148px;
+  margin-right: 154px;
+}
+
+.Cancel-button {
+  right: 1px;
+  position: absolute;
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  width: 73px;
+  height: 73px;
+  align-items: center;
+  justify-content: center;
+  border-color: rgba(255, 255, 255, 0.267);
+}
+.buttons-nav {
+}
+.Cancel-button img {
+  border-radius: 18px;
+  background-color: #b4a99d;
+  width: 30px;
+  height: 30px;
+}
+.timer-button {
+  width: 476px;
+  height: 77px;
+  display: flex;
+  /* Выровнять по вертикали */
+  justify-content: space-between; /* Разместить элементы на одной линии */
+}
+.start-button {
+  margin-right: 1px;
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  width: 73px;
+  height: 73px;
+  align-items: center;
+  justify-content: center;
+  border-color: rgba(255, 255, 255, 0.267);
+}
+
+.start-button img {
+  border-radius: 18px;
+  background-color: #b4a99d;
+  width: 30px;
+  height: 30px;
+}
+.Toothless {
+  background-color: #62554a;
+  width: 25px;
+  height: 25px;
+  display: block;
+  display: flex;
+  border: none;
+  margin-left: 1130px;
+  margin-top: 230px;
+  align-items: center;
+  justify-content: center;
+  border-color: #62554a;
+}
+.Toothless img {
+  width: 25px;
+  height: 25px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Toothless-container {
+  width: 25px;
+  height: 25px;
+}
+
+.buttons {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  display: flex;
+  width: 476px;
+  height: 149px;
+}
+.pause-button {
+  position: relative;
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  width: 73px;
+  height: 73px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  border-color: rgba(255, 255, 255, 0.267);
+}
+.pause-button img {
+  border-radius: 18px;
+  background-color: #b4a99d;
+  width: 30px;
+  height: 30px;
+}
+
+.buttons-plus {
+  display: flex;
+  flex-direction: row;
+  width: 391px;
+  height: 69px;
+}
+.m1 {
+  color: white;
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  width: 85px;
+  height: 70px;
+  border-color: rgba(255, 255, 255, 0.267);
+}
+.m5 {
+  color: white;
+  margin-right: 14px;
+  margin-left: 14px;
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border-radius: 18px;
+  width: 85px;
+  height: 70px;
+  border-color: rgba(255, 255, 255, 0.267);
+}
+.m10 {
+  color: white;
+  margin-right: 14px;
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border-radius: 18px;
+  width: 85px;
+  height: 70px;
+  border-color: rgba(255, 255, 255, 0.267);
+}
+
+.m30 {
+  color: white;
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border-radius: 18px;
+  width: 85px;
+  height: 70px;
+  border-color: rgba(255, 255, 255, 0.267);
+}
+
+.buttons-minus {
+  display: flex;
+  flex-direction: row;
+  width: 391px;
+  height: 69px;
+}
+.m1- {
+  color: white;
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border-radius: 18px;
+  width: 85px;
+  height: 70px;
+  border-color: rgba(255, 255, 255, 0.267);
+}
+.m5- {
+  color: white;
+  margin-right: 14px;
+  margin-left: 14px;
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border-radius: 18px;
+  width: 85px;
+  height: 70px;
+  border-color: rgba(255, 255, 255, 0.267);
+}
+.m10- {
+  color: white;
+  margin-right: 10px;
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border-radius: 18px;
+  width: 85px;
+  height: 70px;
+  border-color: rgba(255, 255, 255, 0.267);
+}
+
+.m30- {
+  color: white;
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-left: 5px;
+  border-radius: 18px;
+  width: 85px;
+  height: 70px;
+  border-color: rgba(255, 255, 255, 0.267);
+}
+
+.rest-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  width: 170px;
+  height: 70px;
+  border-radius: 23px;
+}
+.ghalochka {
+  display: flex;
+  border-radius: 18px;
+  background-color: #b4a99d;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border-radius: 18px;
+  width: 90px;
+  height: 70px;
+  width: 55px;
+  height: 55px;
+  border-radius: 18px;
+  background-color: #b4a99d;
+}
+.catssss{
+  width: 100px;
+  height: 100px;
+}
